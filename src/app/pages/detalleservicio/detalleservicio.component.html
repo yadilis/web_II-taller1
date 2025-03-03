@@ -1,0 +1,47 @@
+<body> 
+
+<h2 style="text-align: center;">Actualizar formulario</h2>
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm" class="formulario-servicio">
+  <!-- Campo ID -->
+  <div class="mb-5">
+    <label for="id" class="label">ID</label>
+    <input type="text" name="id" [(ngModel)]="id" id="id" class="input" />
+  </div>
+
+  <!-- Campo Materia -->
+  <div class="mb-5">
+    <label for="materia" class="label">Materia:</label>
+    <select name="materia" [(ngModel)]="materia" id="materia" class="input" required>
+      <option value="" disabled selected>Selecciona una materia</option>
+      <option value="Tecnologia">Tecnología</option>
+      <option value="Fisica">Física</option>
+      <option value="Quimica">Química</option>
+      <option value="Historia">Historia</option>
+      <option value="Artes">Artes</option>
+      <option value="Musica">Música</option>
+      <option value="Matematicas">Matemáticas</option>
+      <option value="Filosofia">Filosofía</option>
+      <option value="Ingles">Inglés</option>
+    </select>
+  </div>
+
+  <!-- Campo Descripción -->
+  <div class="mb-5">
+    <label for="descripcion" class="label">Descripción:</label>
+    <input type="text" name="descripcion" [(ngModel)]="descripcion" id="descripcion" class="input" required />
+  </div>
+
+  <!-- Campo Horario -->
+  <div class="mb-5">
+    <label for="horario" class="label">Horario:</label>
+    <input type="time" name="horario" [(ngModel)]="horario" id="horario" class="input" required />
+  </div>
+
+  <div class="mb-5">
+    <label for="imagen" class="label">Imagen:</label>
+    <input type="url" name="imagen" [(ngModel)]="imagen" id="imagen" class="input" required />
+  </div>
+
+  <button type="submit" class="btn">Guardar</button>
+</form>
+</body>

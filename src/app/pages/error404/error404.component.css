@@ -1,0 +1,92 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo Gradiente y Estilo General */
+.error-page {
+    background: linear-gradient(to right, #6a4cfc, #5c6bc0, #039be5);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Título del Error */
+.error-title {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Descripción del Error */
+.error-description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* Imagen del Error */
+.error-image-container {
+    margin-bottom: 3rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.error-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    animation: bounce 2s infinite;
+}
+
+/* Botón para Regresar al Inicio */
+.back-home-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #039be5;
+    color: white;
+    border-radius: 0.5rem;
+    border: 2px solid #039be5;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: white;
+    color: #039be5;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

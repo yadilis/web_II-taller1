@@ -1,0 +1,18 @@
+{
+  "servicios": [
+    {
+      "id": "6905",
+      "materia": "Quimica",
+      "descripcion": "dfgggggggggggggggggggggggg",
+      "horario": "12:34",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg"
+    },
+    {
+      "id": "56db",
+      "materia": "Filosofia",
+      "descripcion": "dfgggggggggggggggggggggggg",
+      "horario": "12:45",
+      "imagen": "https://fotografiamejorparavendermas.com/wp-content/uploads/2017/06/La-importancia-de-la-imagen.jpg"
+    }
+  ]
+}

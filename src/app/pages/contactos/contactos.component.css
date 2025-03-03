@@ -1,0 +1,96 @@
+body {
+    background-color:#1E4D66; /* Este es el color de fondo */
+}
+
+.contact-info {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-right: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: #4DA1A9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Centrar el texto e íconos */
+}
+
+.contact-card i {
+    color: #fafafa;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para la sección de redes sociales */
+.social-media {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to right, #b1b7ce, #8dc1e7);
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título */
+.social-media h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo para los enlaces */
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    padding: 8px 16px;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto Hover para los enlaces */
+.social-link:hover {
+    background-color: #ffffff;
+    color: #b1c8e1;
+    transform: scale(1.1);
+}
+
+/* Efecto al pasar el mouse sobre la sección */
+.social-media:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+}

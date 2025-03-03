@@ -1,0 +1,134 @@
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#contenedor_principal{
+  background-color:#1E4D66;
+}
+
+
+
+#contenedor1 {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */  border-radius: 8px; /* Bordes redondeados */
+  padding: 25px; /* Espaciado interno */
+  background-color: #edf2fb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadido para la animación suave */
+}
+
+#contenedor1:hover {
+  transform: translateY(-10px); /* Mueve el contenedor hacia arriba */
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3), -4px -8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+#imagen1{
+  margin-top: 105px;
+  margin-left: -65px;
+}
+
+
+#imagen2{
+  margin-top: 90px;
+
+}
+
+#imagen3{
+  margin-top: 120px;
+  margin-left: -65px;
+
+}
+
+#imagenes3{
+  width: 400px;
+  height: 520px;
+  margin-right: -70px;
+  margin-top: -90px;
+}
+
+#imagenes1{
+  width: 385px;
+  height: 600px;
+  margin-right: -75px;
+  margin-top: -75px;
+}
+
+#imagenes2{
+  width: 410px;
+  height: 515px;
+  margin-right: -25px;
+  margin-top: -75px;
+}
+
+ 
+
+#mision{
+  background-color: #edf2fb;
+  padding: 15px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */  border-radius: 8px; /* Bordes redondeados */
+  gap: 7px;
+
+}
+
+
+#vision{
+  background-color: #e2eafc;
+  padding: 15px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */  border-radius: 8px; /* Bordes redondeados */
+  gap: 7px;
+
+
+}
+
+#valores{
+  background-color: #ccdbfd;
+  padding: 15px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */  border-radius: 8px; /* Bordes redondeados */
+  gap: 7px;
+}
+
+#tarjetas {
+  width: 300px;
+  height: 300px;
+  background-color: #edf2fb;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#tarjetas img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#tarjetas h3 {
+  font-size: 1.25rem;
+  color: #012A4A;
+  font-weight: bold;
+}
+
+#tarjetas p {
+  font-size: 1rem;
+  color: #012A4A;
+  margin: 5px 0;
+}
+
+/* Efecto de hover para hacer que la tarjeta crezca y tenga una sombra más fuerte */
+#tarjetas:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+#tarjetas img {
+  max-width: 100%;
+  height: auto;
+}

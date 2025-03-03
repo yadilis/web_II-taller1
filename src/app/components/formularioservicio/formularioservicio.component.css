@@ -1,0 +1,108 @@
+body{
+  background-color: #1E4D66; 
+
+}
+
+
+
+
+
+/*Diseños de las card */	
+.card-container {
+  display: flex;           
+  justify-content: space-around; 
+  gap: 10px;
+  flex-wrap: wrap;
+  /* Color de fondo gris claro para el contenedor */
+  padding: 20px; /* Agregar un poco de padding al contenedor */
+}
+
+.card {
+  width: 30%; /* Hace que cada tarjeta ocupe el 50% del ancho del contenedor */
+  background-color: #9aa5b0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra a las tarjetas */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos adicionales para mejorar la presentación */
+.card img {
+  width: 100%;
+  height: 300px; /* Ajustar la altura de la imagen */
+  object-fit: cover;
+}
+
+/* Form container */
+.formulario-servicio {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input and select styles */
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs */
+.input:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+
+
+/* Button styles */
+.btn {
+  background-color: #4A90E2;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #357ABD;
+}
+
+/* Error handling for form fields */
+.input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+/* Spacing adjustments */
+.mb-5 {
+  margin-bottom: 20px;
+}
+
