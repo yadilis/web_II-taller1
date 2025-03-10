@@ -1,5 +1,3 @@
-<body> 
-
 <h2 style="text-align: center;">Actualizar formulario</h2>
 <form (ngSubmit)="editar(formulario)" #formulario="ngForm" class="formulario-servicio">
   <!-- Campo ID -->
@@ -8,40 +6,45 @@
     <input type="text" name="id" [(ngModel)]="id" id="id" class="input" />
   </div>
 
-  <!-- Campo Materia -->
-  <div class="mb-5">
-    <label for="materia" class="label">Materia:</label>
-    <select name="materia" [(ngModel)]="materia" id="materia" class="input" required>
-      <option value="" disabled selected>Selecciona una materia</option>
-      <option value="Tecnologia">Tecnología</option>
-      <option value="Fisica">Física</option>
-      <option value="Quimica">Química</option>
-      <option value="Historia">Historia</option>
-      <option value="Artes">Artes</option>
-      <option value="Musica">Música</option>
-      <option value="Matematicas">Matemáticas</option>
-      <option value="Filosofia">Filosofía</option>
-      <option value="Ingles">Inglés</option>
-    </select>
+<div class="mb-5">
+    <label for="nombre" class="label">Nombre:</label>
+    <input type="text" name="nombre" [(ngModel)]="nombre" id="nombre" class="input" required />
   </div>
 
-  <!-- Campo Descripción -->
   <div class="mb-5">
-    <label for="descripcion" class="label">Descripción:</label>
-    <input type="text" name="descripcion" [(ngModel)]="descripcion" id="descripcion" class="input" required />
-  </div>
+      <label for="apellido" class="label">Apellido:</label>
+      <input type="text" name="apellido" [(ngModel)]="apellido" id="apellido" class="input" required />
+    </div>
 
-  <!-- Campo Horario -->
+    <div class="mb-5">
+      <label for="cedula" class="label">Cedula:</label>
+      <input type="number" name="cedula" [(ngModel)]="cedula" id="cedula" class="input" required />
+    </div>
+
+    <div class="mb-5">
+      <label for="telefono" class="label">Telefono:</label>
+      <input type="number" name="telefono" [(ngModel)]="telefono" id="telefono" class="input" required />
+    </div>
+
   <div class="mb-5">
-    <label for="horario" class="label">Horario:</label>
-    <input type="time" name="horario" [(ngModel)]="horario" id="horario" class="input" required />
-  </div>
+      <label for="nivel" class="label">Nivel:</label>
+      <select name="nivel" [(ngModel)]="nivel" id="nivel" class="input" required>
+        <option value="" disabled selected>Selecciona una Nivel</option>
+        <option value="Nivel 1">Nivel 1</option>
+        <option value="Nivel 2">Nivel 2</option>
+        <option value="Nivel 3">Nivel 3</option>
+        <option value="Nivel 4">Nivel 4</option>
+        
+      </select>
+    </div>
 
+  
+  
   <div class="mb-5">
     <label for="imagen" class="label">Imagen:</label>
     <input type="url" name="imagen" [(ngModel)]="imagen" id="imagen" class="input" required />
   </div>
 
+
   <button type="submit" class="btn">Guardar</button>
 </form>
-</body>

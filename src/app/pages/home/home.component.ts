@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import bootstrap from '../../../main.server';
 
 @Component({
   selector: 'app-home',

@@ -13,29 +13,33 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './detalleservicio.component.css'
 })
 export class DetalleservicioComponent {
-  constructor(private servicioo: ServiciossService,private router:Router){}  
+  constructor(private estudiantee: ServiciossService,private router:Router){}  
 
   
   ruta = inject(ActivatedRoute);
 
 id:any ;
-materia:any;
-descripcion:any;
-horario:any;
+nombre:any;
+apellido:any;
+cedula:any;
+telefono:any;
+nivel:any;
 imagen:any;
 item:any;
 editar (formulario:any){
-  this.servicioo.putservicio(formulario.value).subscribe(()=>{this.router.navigate(['/servicio'])});
+  this.estudiantee.putestudiante(formulario.value).subscribe(()=>{this.router.navigate(['/estudiante'])});
   
 }
 ngOnInit() {
-this.ruta.params.subscribe(s=> {
-  this.servicioo.getserviciobyid(s["idServicio"]).subscribe(servicio => {
-    this.item = servicio;
+this.ruta.params.subscribe(e=> {
+  this.estudiantee.getestudiantebyid(e["idEstudiante"]).subscribe(estudiante => {
+    this.item = estudiante;
     this.id = this.item.id;
-    this.materia = this.item.materia;
-    this.descripcion = this.item.descripcion;
-    this.horario = this.item.horario;
+    this.nombre = this.item.nombre;
+    this.apellido = this.item.apellido;
+    this.cedula = this.item.cedula;
+    this.telefono = this.item.telefono;
+    this.nivel = this.item.nivel;
     this.imagen=this.item.imagen;
   })
 })

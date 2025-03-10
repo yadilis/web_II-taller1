@@ -8,28 +8,29 @@ import { Observable } from 'rxjs';
 export class ServiciossService {
 
   constructor(private http:HttpClient) { }
-  private API_SERVICIOS='http://localhost:3000/servicios';
 
-  postServicios(servicio:any):Observable<any>{
-    return this.http.post(this.API_SERVICIOS,servicio)
+  private API_ESTUDIANTES='http://localhost:3001/servicios';
+
+  postEstudiantes(estudiante:any):Observable<any>{
+    return this.http.post(this.API_ESTUDIANTES,estudiante)
   }
  
   
-getServicios(): Observable<any[]> {
-  return this.http.get<any[]>(this.API_SERVICIOS);
+getEstudiantes(): Observable<any[]> {
+  return this.http.get<any[]>(this.API_ESTUDIANTES);
 }
 
-deleteServicios(id: number): Observable<any> {
-  return this.http.delete(`${this.API_SERVICIOS}/${id}`);
+deleteEstudiantes(id: number): Observable<any> {
+  return this.http.delete(`${this.API_ESTUDIANTES}/${id}`);
 }
 
-getserviciobyid(id: any): Observable<any> {
-  return this.http.get(`${this.API_SERVICIOS}/${id}`);
+getestudiantebyid(id: any): Observable<any> {
+  return this.http.get(`${this.API_ESTUDIANTES}/${id}`);
   
 }
 
-putservicio(servicio: any): Observable<any> {
-  return this.http.put(`${this.API_SERVICIOS}/${servicio.id}`, servicio);
+putestudiante(estudiante: any): Observable<any> {
+  return this.http.put(`${this.API_ESTUDIANTES}/${estudiante.id}`, estudiante);
 }
 
 

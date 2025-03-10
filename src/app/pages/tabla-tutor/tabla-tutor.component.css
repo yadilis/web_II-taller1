@@ -1,0 +1,111 @@
+
+body{
+    background-color: #1E4D66; 
+  
+  }
+  
+  /* Contenedor principal */
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #282345;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Encabezados */
+  th {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Filas */
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Imagen */
+  .servicio-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e5e7eb;
+  }
+  
+  /* Botones */
+  button {
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Botón actualizar */
+  button.bg-blue-500 {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  button.bg-blue-500:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Botón eliminar */
+  button.bg-red-500 {
+    background-color: #ef4444;
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Ajustes para dispositivos pequeños */
+  @media (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    th, td {
+      font-size: 0.875rem;
+      padding: 0.8rem;
+    }
+  }
+  

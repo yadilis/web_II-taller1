@@ -1,0 +1,128 @@
+body{
+  background-color: #1E4D66; 
+}
+
+/*Diseños de las card */	
+.card-container {
+  display: flex;           
+  justify-content: space-around; 
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 30%;
+  background-color: #9aa5b0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Estilo para el encabezado */
+header {
+background-color: #ffffff; /* Fondo de color atractivo */
+color: rgb(82, 126, 222);
+padding: 20px;
+text-align: center;
+border-bottom: 4px solid #53f9fc; /* Línea decorativa */
+}
+
+header h1 {
+font-size: 3rem; /* Título grande */
+font-weight: bold;
+margin-bottom: 20px;
+letter-spacing: 1px;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar el título */
+}
+
+.logout-btn {
+background: linear-gradient(45deg, #571128, #cb5858); /* Fondo gradiente */
+color: white;
+font-size: 1.2rem;
+font-weight: 600;
+padding: 6px 8px;
+border-radius: 8px;
+border: none;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+.logout-btn:hover {
+background: linear-gradient(45deg, #ff80ab, #ff4081); /* Invertir gradiente en hover */
+transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.logout-btn:focus {
+outline: none;
+box-shadow: 0 0 0 4px rgba(255, 64, 129, 0.5); /* Resaltar cuando está enfocado */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer .social-links {
+  margin-top: 20px;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+  color: #4CAF50;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 1200px) {
+  .card {
+      width: 45%; /* Las tarjetas ocupan el 45% del ancho en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 90%; /* Las tarjetas ocupan el 90% del ancho en pantallas más pequeñas */
+      margin: 10px 0; /* Añadir espacio entre las tarjetas */
+  }
+
+  header h1 {
+      font-size: 2rem; /* Reducir el tamaño del título */
+  }
+
+  .logout-btn {
+      font-size: 1rem; /* Reducir tamaño de fuente para el botón */
+      padding: 5px 7px; /* Ajustar el padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+      justify-content: center; /* Centrar las tarjetas en pantallas muy pequeñas */
+  }
+
+  header h1 {
+      font-size: 1.5rem; /* Reducir aún más el tamaño del título */
+  }
+
+  .logout-btn {
+      width: 100%; /* Hacer que el botón ocupe todo el ancho en pantallas pequeñas */
+      text-align: center; /* Centrar el texto */
+  }
+}

@@ -1,96 +1,172 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico */
 body {
-    background-color:#1E4D66; /* Este es el color de fondo */
-}
-
-.contact-info {
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.contact-info h2 {
-    font-size: 2.5rem;
-    margin-right: 500;
-    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
     color: #333;
 }
 
-.contact-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
+/* Contenedor general */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.contact-card {
-    background-color: #4DA1A9;
-    border-radius: 15px;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center; /* Centrar el texto e íconos */
+/* Estilos del header */
+header {
+    background-color: #1E4D66;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
 }
 
-.contact-card i {
-    color: #fafafa;
-    margin-bottom: 15px;
-}
-
-.contact-card h3 {
-    font-size: 1.5rem;
-    color: #ffffff;
+header h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.contact-card p {
+header p {
     font-size: 1.2rem;
-    color: #000000;
 }
 
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Estilos del formulario de contacto */
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-
-/* Estilo para la sección de redes sociales */
-.social-media {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background: linear-gradient(to right, #b1b7ce, #8dc1e7);
-    color: white;
+.contact-form h2 {
     text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-/* Estilo para el título */
-.social-media h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.5px;
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-/* Estilo para los enlaces */
-.social-link {
-    color: #ffffff;
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de la sección de Información de Contacto */
+.contact-info {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+/* Estilos del mapa */
+.map {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.map iframe {
+    border-radius: 8px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
     font-size: 1.2rem;
-    margin: 0 20px;
-    padding: 8px 16px;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efecto Hover para los enlaces */
-.social-link:hover {
-    background-color: #ffffff;
-    color: #b1c8e1;
-    transform: scale(1.1);
+footer .social-links a:hover {
+    color: #4CAF50;
 }
 
-/* Efecto al pasar el mouse sobre la sección */
-.social-media:hover {
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .contact-form, .contact-info {
+        padding: 30px;
+    }
+
+    .contact-form h2, .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+
+    footer .social-links a {
+        font-size: 1rem;
+    }
 }

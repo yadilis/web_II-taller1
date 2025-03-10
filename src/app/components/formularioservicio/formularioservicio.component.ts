@@ -1,26 +1,32 @@
 import { Component } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { RouterModule, Router } from "@angular/router";  // Asegúrate de importar Router
 import { ServiciossService } from "../../service/servicioss.service";
-
 
 @Component({
   selector: 'app-formularioservicio',
   standalone: true,
   imports: [FormsModule, RouterModule],
   templateUrl: './formularioservicio.component.html',
-  styleUrl: './formularioservicio.component.css'
+  styleUrls: ['./formularioservicio.component.css']  // Corrige 'styleUrl' por 'styleUrls'
 })
 export class FormularioservicioComponent {
-  constructor(private servicioo : ServiciossService ) { }
-  materia:any;
-  descripcion:any;
-  horario:any;
-  imagen:any;
-  
-  guardarServicio(formulario:any){
-    this.servicioo.postServicios(formulario.value).subscribe(()=>{window.location.reload()});
-    
+  constructor(
+    private servicio: ServiciossService,
+    private route:Router
+  ) {}
+
+  nombre: any;
+  apellido: any;
+  cedula: any;
+  telefono: any;
+  nivel: any;
+  imagen: any;
+
+  guardarEstudiante(formulario: any) {
+    this.servicio.postEstudiantes(formulario.value).subscribe(() => {
+      window.location.reload();
+    });
   }
 
   seleccionarImagen(event: any) {
@@ -29,6 +35,10 @@ export class FormularioservicioComponent {
       console.log('Imagen seleccionada:', file.name);
     }
   }
+
+  // Método logout
+  logout(){
+    localStorage.setItem("login","false")
+    this.route.navigate(['login'])
+  }
 }
-
-

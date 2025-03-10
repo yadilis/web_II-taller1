@@ -1,110 +1,199 @@
-
-body{
-  background-color: #1E4D66; 
-
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Contenedor principal */
-.container {
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #f9fafb;
-  border-radius: 8px;
+/* Estilo básico */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column; /* El contenido se organizará de arriba hacia abajo */
+  align-items: center; /* Centra el contenido horizontalmente */
+  height: 100vh;
 }
 
-/* Título */
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #282345;
-}
-
-/* Tabla */
-table {
+/* Contenido principal */
+.main-content {
   width: 100%;
-  border-collapse: collapse;
+  padding: 20px;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #2c3e50;
+}
+
+/* Estilo de las estadísticas */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+  gap: 20px; /* Espaciado entre tarjetas */
+}
+
+.stat-card {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%; /* Ajustado al 30% del contenedor */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* Tabla de usuarios */
+.table-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.table-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.table-container table {
+  width: 100%;
+  background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
-  padding: 1rem;
+.table-container th, .table-container td {
+  padding: 12px 15px;
   text-align: left;
-  font-size: 1rem;
-  color: #555;
+  color: #2c3e50;
 }
 
-/* Encabezados */
-th {
-  background-color: #3b82f6;
+.table-container thead {
+  background-color: #2980b9;
   color: white;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
-/* Filas */
-tbody tr {
-  transition: background-color 0.3s ease;
+.table-container tr:nth-child(even) {
+  background-color: #ecf0f1;
 }
 
-tbody tr:hover {
-  background-color: #f3f4f6;
+.table-container tr:hover {
+  background-color: #dfe6e9;
 }
 
-/* Imagen */
-.servicio-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+.table-container img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 2px solid #e5e7eb;
 }
 
-/* Botones */
-button {
-  padding: 0.5rem 1.25rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
+.table-container .actions {
+  text-align: center;
+}
+
+.table-container .btn-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
-/* Botón actualizar */
-button.bg-blue-500 {
-  background-color: #3b82f6;
-  color: white;
+.table-container .btn-eliminar:hover {
+  background-color: #c0392b;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-button.bg-blue-500:hover {
-  background-color: #2563eb;
+footer .social-links {
+  margin-top: 20px;
 }
 
-/* Botón eliminar */
-button.bg-red-500 {
-  background-color: #ef4444;
-  color: white;
-  margin-left: 1rem;
+footer .social-links a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-button.bg-red-500:hover {
-  background-color: #dc2626;
+footer .social-links a:hover {
+  color: #4CAF50;
 }
 
-/* Ajustes para dispositivos pequeños */
+
+/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+  .stats {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  th, td {
-    font-size: 0.875rem;
-    padding: 0.8rem;
+
+  .stat-card {
+      width: 80%;
+      margin-bottom: 20px;
   }
+
+  .tasks ul li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .tasks ul li .btn {
+      margin-top: 10px;
+  }
+
+  .table-container table {
+      font-size: 14px;
+  }
+}
+header {
+  text-align: center; /* Centra todo el contenido dentro del encabezado */
+}
+
+.logout-btn {
+  background: linear-gradient(45deg, #571128, #cb5858); /* Fondo gradiente */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+  display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
+  margin-top: 10px; /* Añadir un margen superior si es necesario */
+}
+
+.logout-btn:hover {
+  background: linear-gradient(45deg, #ff80ab, #ff4081); /* Invertir gradiente en hover */
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 64, 129, 0.5); /* Resaltar cuando está enfocado */
 }

@@ -1,18 +1,34 @@
 {
   "servicios": [
+    [
+      {
+        "id": 1,
+        "nombre": "Servicio 1",
+        "descripcion": "Descripción del servicio 1"
+      },
+      {
+        "id": 2,
+        "nombre": "Servicio 2",
+        "descripcion": "Descripción del servicio 2"
+      }
+    ],
     {
-      "id": "6905",
-      "materia": "Quimica",
-      "descripcion": "dfgggggggggggggggggggggggg",
-      "horario": "12:34",
-      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg"
+      "nombre": "Joel",
+      "apellido": "Romero",
+      "cedula": 1756348898,
+      "telefono": 987281555,
+      "nivel": "Nivel 1",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg",
+      "id": 7
     },
     {
-      "id": "56db",
-      "materia": "Filosofia",
-      "descripcion": "dfgggggggggggggggggggggggg",
-      "horario": "12:45",
-      "imagen": "https://fotografiamejorparavendermas.com/wp-content/uploads/2017/06/La-importancia-de-la-imagen.jpg"
+      "nombre": "Andres",
+      "apellido": "Molina",
+      "cedula": 1754197745,
+      "telefono": 987281527,
+      "nivel": "Nivel 3",
+      "imagen": "https://ethic.es/wp-content/uploads/2023/03/imagen-1280x768.jpg",
+      "id": 8
     }
   ]
 }

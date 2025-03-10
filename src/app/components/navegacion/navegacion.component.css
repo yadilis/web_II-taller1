@@ -1,40 +1,79 @@
+#enlaces, .navbar-link {
+    text-decoration: none;
+    color: #F6F4F0;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
 
-.navbar-container {
-    background-color:#2C7DA0;
+#enlaces:hover, .navbar-link:hover {
+    color: #398bae;
+    background-color: #F6F4F0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
-.navbar-logo {
-    display: flex;
-    color: #000000;
-    align-items: center;
-    gap: 0.9¿0rem;
+
+#enlaces:focus, .navbar-link:focus {
+    outline: 2px solid #398bae;
+    outline-offset: 2px;
 }
-  
-.navbar-logo img {
-    height: 3rem;
+
+#enlaces:active, .navbar-link:active {
+    transform: scale(0.98);
+    box-shadow: none;
 }
-  
-.navbar-logo span {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-  
-.navbar-menu {
-    background-color: #398bae ;
-}
-  
+
 .navbar-menu-list {
     display: flex;
-    gap: 2rem;
-    font-weight: 500;
-    font-size: 0.875rem;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-  
-.navbar-link {
+
+.navbar-menu-list li {
+    list-style: none;
+}
+
+#titulooo {
+    font-size: 1rem;
+    font-weight: 800;
     color: #F6F4F0;
-    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    padding: 5px 10px;
+    background-color: #398bae;
+    border-radius: 10px;
 }
-  
-.navbar-link:hover {
-    text-decoration: underline;
+
+#titulooo:hover {
+    color: #398bae;
+    background-color: #F6F4F0;
+    transform: scale(1.1);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark #titulooo {
+    color: white;
+    background-color: #2C7DA0;
+}
+
+.dark #titulooo:hover {
+    color: #2C7DA0;
+    background-color: #F6F4F0;
+}
+
+#barra {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+#barra:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }

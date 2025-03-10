@@ -1,0 +1,16 @@
+
+{
+    "users": [
+    {
+      "email": "yadira@estudiante.com",
+      "password": "12345",
+      "role": "estudiante"
+    },
+    {
+      "email": "joel@tutor.com",
+      "password": "12345",
+      "role": "tutor"
+    }
+  ]
+    
+  }

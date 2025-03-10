@@ -1,0 +1,46 @@
+<body>
+<section class="home-banner">
+  <div class="background-container"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo-container">
+        <img src="assets/LogoNegro.png" alt="Logo" class="logo" />
+        <h1 class="titulo">Inicia Sesion</h1>
+        <p class="subtitulo">Tu <span class="resaltado">Certificación</span> a un Click</p>
+      </div>
+      <form (ngSubmit)="login(formulario)" #formulario="ngForm" class="formulario-content">
+        <div class="input-group">
+          <i class="fas fa-envelope"></i> <!-- Icono de correo -->
+          <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="Ingrese un email" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i> <!-- Icono de contraseña -->
+          <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="Ingrese una contraseña" required />
+        </div>
+        <button type="submit" class="btn-acceder">Acceder</button>
+      </form>
+      <div class="links">
+        <a href="#">¿Olvidó su contraseña?</a>
+        <a href="#">¿No tiene cuenta? <span class="crear-cuenta">Crear nueva cuenta</span></a>
+      </div>
+    </div>
+    <div class="info-box">
+      <p>¿Nuevo usuario? Por favor, llene los campos seleccionados con un * (son obligatorios) para poder registrarse en nuestros cursos.</p>
+      <p>Recibirá su clave de acceso al correo que nos proporcione</p>
+      <button class="btn-invitado">Entrar como persona invitada</button>
+      <a href="#" class="aviso-cookies">Aviso de Cookies</a>
+    </div>
+  </div>
+  
+</section>
+<footer>
+  <div class="container">
+      <p>&copy; 2025 TutoriasMaster YJM. Todos los derechos reservados.</p>
+      <div class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+  </div>
+</footer>
+</body>
