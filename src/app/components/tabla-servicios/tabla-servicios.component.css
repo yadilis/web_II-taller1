@@ -8,7 +8,7 @@
 /* Estilo básico */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: #2B333C;
   display: flex;
   flex-direction: column; /* El contenido se organizará de arriba hacia abajo */
   align-items: center; /* Centra el contenido horizontalmente */
@@ -28,7 +28,7 @@ body {
 .main-content h1 {
   margin-bottom: 20px;
   font-size: 30px;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 /* Estilo de las estadísticas */
@@ -60,68 +60,42 @@ body {
   color: #3498db;
 }
 
-/* Tabla de usuarios */
-.table-container {
-  margin-top: 40px;
-  width: 100%;
+/* Estilo para el encabezado */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  background: #1a1a2e; /* Fondo oscuro elegante */
 }
 
-.table-container h1 {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.table-container table {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.table-container th, .table-container td {
-  padding: 12px 15px;
-  text-align: left;
-  color: #2c3e50;
-}
-
-.table-container thead {
-  background-color: #2980b9;
+.logout-btn {
+  background: #e63946; /* Rojo atractivo */
   color: white;
-}
-
-.table-container tr:nth-child(even) {
-  background-color: #ecf0f1;
-}
-
-.table-container tr:hover {
-  background-color: #dfe6e9;
-}
-
-.table-container img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.table-container .actions {
-  text-align: center;
-}
-
-.table-container .btn-eliminar {
-  background-color: #e74c3c;
-  color: white;
-  padding: 8px 12px;
   border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.table-container .btn-eliminar:hover {
-  background-color: #c0392b;
+.logout-btn:hover {
+  background: #d62839; /* Rojo más intenso al pasar el mouse */
+  transform: scale(1.05);
 }
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
+
+.logout-btn:focus {
+outline: none;
+box-shadow: 0 0 0 4px rgba(255, 64, 129, 0.5); /* Resaltar cuando está enfocado */
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -145,55 +119,106 @@ footer .social-links a:hover {
   color: #4CAF50;
 }
 
+/* Media queries para pantallas pequeñas */
+@media (max-width: 1200px) {
+  .card {
+      width: 45%; /* Las tarjetas ocupan el 45% del ancho en pantallas más pequeñas */
+  }
+}
 
-/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
-  .stats {
-      flex-direction: column;
-      align-items: center;
+  .card {
+      width: 90%; /* Las tarjetas ocupan el 90% del ancho en pantallas más pequeñas */
+      margin: 10px 0; /* Añadir espacio entre las tarjetas */
   }
 
-  .stat-card {
-      width: 80%;
-      margin-bottom: 20px;
+  header h1 {
+      font-size: 2rem; /* Reducir el tamaño del título */
   }
 
-  .tasks ul li {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .tasks ul li .btn {
-      margin-top: 10px;
-  }
-
-  .table-container table {
-      font-size: 14px;
+  .logout-btn {
+      font-size: 1rem; /* Reducir tamaño de fuente para el botón */
+      padding: 5px 7px; /* Ajustar el padding */
   }
 }
-header {
-  text-align: center; /* Centra todo el contenido dentro del encabezado */
+
+@media (max-width: 480px) {
+  .card-container {
+      justify-content: center; /* Centrar las tarjetas en pantallas muy pequeñas */
+  }
+
+  header h1 {
+      font-size: 1.5rem; /* Reducir aún más el tamaño del título */
+  }
+
+  .logout-btn {
+      width: 100%; /* Hacer que el botón ocupe todo el ancho en pantallas pequeñas */
+      text-align: center; /* Centrar el texto */
+  }
 }
 
-.logout-btn {
-  background: linear-gradient(45deg, #571128, #cb5858); /* Fondo gradiente */
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 6px 8px;
+
+/* Tabla de usuarios */
+.table-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.table-container h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.table-container table {
+  width: 100%;
+  background-color: #ffffff;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th, .table-container td {
+  padding: 12px 15px;
+  text-align: left;
+  color: #2c3e50;
+}
+
+.table-container thead {
+background-color: #fbbf24;
+  color: white;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.table-container tr:hover {
+  background-color: #dfe6e9;
+}
+
+.table-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.table-container .actions {
+  text-align: center;
+}
+
+.table-container .btn-eliminar {
+  background-color: #312e2e;
+  color: white;
+  padding: 8px 12px;
   border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
-  display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
-  margin-top: 10px; /* Añadir un margen superior si es necesario */
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.logout-btn:hover {
-  background: linear-gradient(45deg, #ff80ab, #ff4081); /* Invertir gradiente en hover */
-  transform: translateY(-5px); /* Efecto de elevación */
+.table-container .btn-eliminar:hover {
+  background-color: #c0392b;
 }
 
-.logout-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(255, 64, 129, 0.5); /* Resaltar cuando está enfocado */
-}
+

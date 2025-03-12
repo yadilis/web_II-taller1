@@ -1,178 +1,91 @@
+
 <body>
-    
-  
- 
+    <header class="header">
+        <button (click)="logout()" type="button" class="logout-btn">
+          Cerrar sesión
+        </button>
+      </header>
+<div class="container mt-1">
+    <h3 class="mb-4">Mis Cursos</h3>
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://www.astera.com/wp-content/uploads/2019/05/DBI-1.jpg" alt="Base de Datos">
+                <div class="course-title">BASE DE DATOS</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
+        </div>
 
-  
-<div class="card-container">
-    <div class="card">
-            <img class="rounded-t-lg" src="https://www.ymant.com/wp-content/uploads/2017/02/Base-de-Datos-YMANT.jpg" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Base de Datos
-                </h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Base de Datos se enfoca en el estudio y manejo de sistemas que permiten almacenar, organizar y recuperar información de manera eficiente. Los estudiantes aprenden a diseñar, administrar y optimizar bases de datos utilizando modelos relacionales y otras tecnologías. Además, se abordan temas como consultas SQL, normalización y seguridad de datos.</p>
-            <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Inscribirse
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://gurusis.com/wp-content/uploads/2024/10/soft.png" alt="Metodología de Software">
+                <div class="course-title">METODOLOGÍA DE SOFTWARE</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
         </div>
-        
-    </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        
-        <div class="p-5">
-            
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Programación</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Programación enseña los fundamentos y técnicas necesarias para escribir software mediante el uso de lenguajes de programación. Los estudiantes aprenden a desarrollar algoritmos, estructuras de datos y soluciones eficientes para diversos problemas. Además, se enfocan en la lógica, depuración y buenas prácticas en el desarrollo de código.
 
-            </p>
-            <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Inscribirse
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://images.pexels.com/photos/14765792/pexels-photo-14765792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Aplicaciones Web II">
+                <div class="course-title">APLICACIONES WEB II</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
         </div>
-    </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Aplicaciones Móviles</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Aplicaciones Móviles se centra en el desarrollo de software para dispositivos móviles, como smartphones y tabletas. Los estudiantes aprenden a crear aplicaciones utilizando plataformas como Android e iOS, trabajando con interfaces de usuario, bases de datos y servicios en la nube. También se abordan temas como la optimización de rendimiento y la experiencia para el usuario en dispositivos móviles.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-            
-        </div>
-    </div>
-  </div>
-  
-  <div class="card-container">
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Inteligencia Artificial
-                </h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Inteligencia Artificial (IA) se enfoca en el estudio de algoritmos y sistemas que permiten a las máquinas simular procesos cognitivos humanos, como el aprendizaje, razonamiento y resolución de problemas. Los estudiantes exploran técnicas como el aprendizaje automático, redes neuronales y procesamiento del lenguaje natural. Además, se abordan aplicaciones prácticas de la IA en áreas como la visión por computadora y la facinante robotica.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-        </div>
-    </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/7567561/pexels-photo-7567561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        
-        <div class="p-5">
-            
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Inteligencia de Negocios</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Inteligencia de Negocios se centra en el análisis de datos para apoyar la toma de decisiones estratégicas en las organizaciones. Los estudiantes aprenden a utilizar herramientas y técnicas para recopilar, procesar y visualizar grandes volúmenes de datos, transformándolos en información útil. Además, se abordan temas como minería de datos, análisis predictivo y dashboards interactivos para su funcion.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
 
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Programación III">
+                <div class="course-title">PROGRAMACIÓN III</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
+        </div>
 
-            </p>
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://images.pexels.com/photos/17489153/pexels-photo-17489153/free-photo-of-ligero-tecnologia-ordenador-dispositivo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sistemas Operativos">
+                <div class="course-title">SISTEMAS OPERATIVOS</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
         </div>
-        
+
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://images.pexels.com/photos/4705635/pexels-photo-4705635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mantenimiento de Computadoras">
+                <div class="course-title">MANTENIMIENTO Y ENSAMBLAJE</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8G7X1kZRd1AeP3xabp1N7wNDaK-LExPXJw&s" alt="Calidad de Software">
+                <div class="course-title">CALIDAD DE SOFTWARE</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-card">
+                <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Inteligencia Artificial">
+                <div class="course-title">INTELIGENCIA ARTIFICIAL</div>
+                <a href="servicio" class="btn-ingresar">INGRESAR</a>
+            </div>
+        </div>
+
     </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/6476253/pexels-photo-6476253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Aplicaciones Web</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Aplicaciones Web se enfoca en el diseño, desarrollo y mantenimiento de aplicaciones accesibles a través de navegadores de internet. Los estudiantes aprenden a crear interfaces interactivas utilizando tecnologías como HTML, CSS, JavaScript y frameworks como React o Angular. También se abordan aspectos relacionados con la seguridad, el manejo de bases de datos y optimización del rendimiento.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-            
-        </div>
-    </div>
-  </div>
-  
-  <div class="card-container">
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/17489153/pexels-photo-17489153/free-photo-of-ligero-tecnologia-ordenador-dispositivo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Sistemas Operativos
-                </h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Sistemas Operativos estudia el software que gestiona el hardware de una computadora y permite la ejecución de aplicaciones. Los estudiantes aprenden sobre la administración de recursos como la memoria, el procesador y el almacenamiento, así como sobre la gestión de procesos y la interacción. Además, se abordan temas como la seguridad, los sistemas de archivos y la comunicación entre procesos.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-        </div>
-    </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/6963098/pexels-photo-6963098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        
-        <div class="p-5">
-            
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Seguridad Informática</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Seguridad Informática se enfoca en proteger los sistemas, redes y datos contra accesos no autorizados, ataques cibernéticos y daños. Los estudiantes aprenden sobre criptografía, firewalls, autenticación, control de accesos y análisis de vulnerabilidades. Además, se abordan estrategias para prevenir, detectar y responder a incidentes de seguridad en entornos digitales.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-        </div>
-    </div>
-  
-    <div class="card">
-            <img class="rounded-t-lg" src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-        <div class="p-5">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">Fundamentos de Redes</h5>
-            <p class="mb-3 font-normal text-white-700 dark:text-white-400">Fundamentos de Redes se centra en el estudio de la infraestructura y protocolos que permiten la comunicación entre dispositivos en una red. Los estudiantes aprenden sobre modelos de referencia como el OSI, direccionamiento IP, enrutamiento, conmutación y seguridad en redes. Además, se abordan conceptos sobre la configuración y gestión de redes locales.
-                <a href="servicio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Inscribirse
-                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </p>
-            
-        </div>
-    </div>
-  </div>
-  <header>
-    <button (click)="logout()" type="button" class="logout-btn">
-      Cerrar sesión
-    </button>
-  </header>
-  <footer>
-    <div class="container">
-        <p>&copy; 2025 TutoriasMaster YJM. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
+</div>
+
+</body>
+
+<footer class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2025 ITSQMET. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+        <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+      </div>
     </div>
   </footer>
-</body>
+  
+

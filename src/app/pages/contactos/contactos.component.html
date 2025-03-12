@@ -1,65 +1,57 @@
 
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>¡Contáctanos!</h1>
-            <p>Estamos aquí para ayudarte, envíanos tus preguntas o comentarios.</p>
+<body class="contacto-bg">
+
+  <!-- Contáctanos -->
+  <section class="contacto-container">
+    <h1 class="contacto-title">Contáctanos</h1>
+    <div class="contacto-grid">
+      
+      <!-- Formulario de Contacto -->
+      <div class="contacto-form-container">
+        <h2 class="contacto-form-title">Envíanos un mensaje</h2>
+        <form>
+          <div class="contacto-input-group">
+            <label for="name" class="contacto-label">Nombre</label>
+            <input type="text" id="name" class="contacto-input" placeholder="Tu nombre" required>
+          </div>
+          <div class="contacto-input-group">
+            <label for="email" class="contacto-label">Correo electrónico</label>
+            <input type="email" id="email" class="contacto-input" placeholder="Tu correo" required>
+          </div>
+          <div class="contacto-input-group">
+            <label for="message" class="contacto-label">Mensaje</label>
+            <textarea id="message" class="contacto-textarea" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="contacto-button">Enviar Mensaje</button>
+        </form>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="contacto-info-container">
+        <h2 class="contacto-info-title">Información de contacto</h2>
+        <p class="contacto-info"><strong>Dirección:</strong> Calle de ejemplo #123, Quito, Ecuador</p>
+        <p class="contacto-info"><strong>Teléfono:</strong> +593 2 123 4567</p>
+        <p class="contacto-info"><strong>Correo electrónico:</strong> contactoitsqmet.edu.ec</p>
+        
+        <!-- Mapa de ubicación -->
+        <div class="contacto-map-container">
+          <iframe class="contacto-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799156579!2d-74.25986601451323!3d40.69767006129527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afc3957a87%3A0x2ef9b078e47db337!2sQuito%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1632224544598!5m2!1ses!2sus" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </header>
+      </div>
 
-    <!-- Sección de Formulario de Contacto -->
-    <main>
-        <section class="contact-form">
-            <div class="container">
-                <h2>Envíanos un mensaje</h2>
-                <form action="#" method="POST">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required>
+    </div>
+  </section>
 
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
+  <!-- Footer -->
+  <footer class="contacto-footer">
+    <div class="contacto-footer-content">
+      <p>&copy; 2025 ITSQMET. Todos los derechos reservados.</p>
+      <div class="contacto-footer-links">
+        <a href="https://facebook.com" target="_blank" class="contacto-footer-link">Facebook</a>
+        <a href="https://twitter.com" target="_blank" class="contacto-footer-link">Twitter</a>
+        <a href="https://instagram.com" target="_blank" class="contacto-footer-link">Instagram</a>
+      </div>
+    </div>
+  </footer>
 
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Sección de Información de Contacto -->
-        <section class="contact-info">
-            <div class="container">
-                <h2>Información de Contacto</h2>
-                <ul>
-                    <li><strong>Dirección:</strong> Av.Inca, Quito, Ecuador</li>
-                    <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
-                    <li><strong>Correo Electrónico:</strong>TutoriasMaster YJM</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Mapa de Google -->
-        <section class="map">
-            <div class="container">
-                <h2>Visitanos</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.009775366101!2d144.95373531531352!3d-37.81627977975173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e2b52b6f1%3A0x5045675218ce670!2sFederation%20Square!5e0!3m2!1ses!2ses!4v1623870000769!5m2!1ses!2ses" 
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
-        </div>
-    </footer>
 </body>
-

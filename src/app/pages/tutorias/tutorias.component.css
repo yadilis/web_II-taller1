@@ -1,65 +1,88 @@
-body{
-  background-color: #1E4D66; 
+body {
+  background-color: #f1f1f1;
 }
-
-/*Diseños de las card */	
-.card-container {
-  display: flex;           
-  justify-content: space-around; 
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.card {
-  width: 30%;
-  background-color: #9aa5b0;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.course-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 450px; /* Aumenté el tamaño */
+  transition: transform 0.3s ease; /* Añadí la transición para el zoom */
 }
-
-.card img {
+.course-card img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  filter: brightness(0.5);
+  transition: transform 0.3s ease; /* Añadí la transición para el zoom */
 }
-
+.course-card:hover img {
+  transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+}
+.course-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem; /* Texto más grande */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 99%;
+}
+.btn-ingresar {
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3b49df;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+.btn-ingresar:hover {
+  background-color: #1F1FBF;
+}
+.btn-ingresar::after {
+  content: "→";
+  font-size: 1.2rem;
+}
 /* Estilo para el encabezado */
-header {
-background-color: #ffffff; /* Fondo de color atractivo */
-color: rgb(82, 126, 222);
-padding: 20px;
-text-align: center;
-border-bottom: 4px solid #53f9fc; /* Línea decorativa */
-}
+.header {
+  display: flex;
+              justify-content: flex-end;
+  padding: 10px;
 
-header h1 {
-font-size: 3rem; /* Título grande */
-font-weight: bold;
-margin-bottom: 20px;
-letter-spacing: 1px;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar el título */
 }
 
 .logout-btn {
-background: linear-gradient(45deg, #571128, #cb5858); /* Fondo gradiente */
-color: white;
-font-size: 1.2rem;
-font-weight: 600;
-padding: 6px 8px;
-border-radius: 8px;
-border: none;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+  background: #e63946; /* Rojo atractivo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logout-btn:hover {
-background: linear-gradient(45deg, #ff80ab, #ff4081); /* Invertir gradiente en hover */
-transform: translateY(-5px); /* Efecto de elevación */
+  background: #d62839; /* Rojo más intenso al pasar el mouse */
+  transform: scale(1.05);
 }
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
 
 .logout-btn:focus {
 outline: none;
@@ -125,4 +148,8 @@ footer .social-links a:hover {
       width: 100%; /* Hacer que el botón ocupe todo el ancho en pantallas pequeñas */
       text-align: center; /* Centrar el texto */
   }
+}
+
+.card p {
+  text-align: justify;
 }
